@@ -1,0 +1,16 @@
+#-- HOTLINK PROTECT --
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^https://royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^http://aliases.royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^https://aliases.royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^http://royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^https://royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^http://aliases.royal-trust-futures.vip/.*$      [NC] 
+RewriteCond %{HTTP_REFERER} !^https://aliases.royal-trust-futures.vip/.*$      [NC] 
+
+RewriteCond %{HTTP_REFERER} !^$ 
+
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC] 
+#-- HOTLINK PROTECT --

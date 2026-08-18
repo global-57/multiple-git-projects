@@ -1,0 +1,865 @@
+/*
+ * Grape - Professional & Flexible Admin Template
+ * by Stammi <http://themeforest.net/user/Stammi>
+ * 
+ * -----------------
+ * TABLE OF CONTENTS
+ * -----------------
+ * 
+ * 1) Generic
+ * 2) Login-Box
+ * 3) Error-Page (404)
+ * 4) Header
+ *   4.1) Generic
+ *   4.2) User Info
+ * 5) Footer
+ * 6) Sidebar
+ *   6.1) Login Details
+ *   6.2) Navigation
+ *   6.3) Badges
+ * 7) Search-Bar & Title-Bar
+ * 8) Main
+ * 9) Generic Shadow
+ * 10) Height Fixes
+ * 11) Divider
+ * 12) Image-Styles
+ * 13) Blocks
+ * 14) Tabs
+ * 15) Toolbox
+ * 16) Alert Boxes
+ * 17) Tooltips
+ * 18) Misc
+ *   18.1) Noise
+ *   18.2) Aligments
+ */
+
+/* ==================================================
+ * 1) Generic
+ * ================================================== */
+
+body {
+	/* background: url("../img/container/navigation/nav-bg.png") repeat-y scroll top left #e3e5e7;/*#e3f0ff*/
+}
+
+body.special-page {
+	background: url("../images/bg2.jpg") no-repeat scroll top center #555555;
+}
+
+
+
+#background{position:fixed;left:0;top:0;width:100%;height:100%;background:url(../images/bg_fusion.jpg) no-repeat;background-size:cover;z-index:-100;}
+
+.block-border {
+	margin-top: 15px;
+	background: url("../images/shine-effect.png") repeat-x scroll 0 0 #1242A6;/*rgba(33, 40, 44, 0.7)*/
+	border: 1px solid #1242A6;
+	border-radius: 5px 5px 5px 5px;
+	padding: 8px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.block-content, .block-content_menu {
+	background: none repeat scroll 0 0 #fafafa;
+	border-radius: 3px 3px 3px 3px;
+	position: relative;
+	padding: 0 10px;
+	border: 1px solid #4b5e6b;
+}
+
+.block-content.dark-bg {
+	background: url("../images/dark-bg.png") repeat-x scroll top left transparent;
+	border: 1px solid #17346b;
+	box-shadow: none !important;
+}
+
+.block-border .block-content + .block-content {
+	margin-top: 10px;
+}
+
+.block-border .block-content {
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.block-header {
+	background: url("../images/block-header-bg.png") repeat-x scroll top left #cfdee5;
+	min-height: 38px;
+	border: 1px solid #4b5e6b;
+	border-bottom: 1px solid #9ba6ab;
+	margin-bottom: -2px;
+	position: relative;
+	z-index: 5;
+}
+
+.block-header.small {
+	min-height: 27px;
+}
+
+.block-actions {
+	margin: 0 -19px -10px -19px;
+	background: url("../images/block-actions-bg.png") repeat-x scroll bottom left transparent;
+	border-radius: 0px 0px 5px 5px;
+	height: 44px;
+	overflow: hidden;
+}
+
+.dataTables_wrapper .block-actions {
+	margin-left: -9px;
+	margin-right: -9px;
+}
+
+.block-header span {
+	background: url("../img/icons/minus.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+	display: block;
+	cursor: pointer;
+}
+
+.block-header span.closed {
+	background: url("../img/icons/plus.png") no-repeat scroll 0 0 transparent;
+}
+
+.block-header h1 {
+	float: left;
+}
+
+
+
+
+/* ==================================================
+ * 2) Login-Box
+ * ================================================== */
+
+#login-box {
+	margin: 0 auto;
+	margin-top: 110px;
+	margin-bottom: 210px;
+	width: 400px;
+}
+
+
+
+
+/* ==================================================
+ * 3) Error-Page (404)
+ * ================================================== */
+
+#error-number {
+	text-align: center;
+	margin-top: 240px;
+}
+
+#error-text {
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+
+
+
+
+/* ==================================================
+ * 4) Header
+ * ================================================== */
+
+/*
+ * 4.1) Generic
+ */
+
+#container > #header-surround > #header {
+	background: url("../images/header-bg.png") repeat-x scroll top left transparent;
+	height: 43px;
+	position: relative;
+	z-index: 30;
+}
+
+#container > #header-surround {
+	background: url("../images/shadow-bottom.png") repeat-x scroll bottom left transparent;
+	padding-bottom: 14px;
+	position: relative;
+	z-index: 50;
+}
+
+.logo {
+	margin-left: 1.5%;
+	float: left;
+	width:16.1%;
+	height:98%;
+}
+
+#container > #header-surround > #header > #user-info > p > .messages {
+	margin-right: 10px;
+}
+
+
+/*
+ * 4.2) User Info
+ */
+
+#user-info {
+	float: right;
+	margin-top: -4px;
+	margin-right: 10px;
+}
+
+/* ==================================================
+ * 5) Footer
+ * ================================================== */
+
+#container > #footer {
+	background: url("../images/footer-bg.png") repeat-x scroll bottom left transparent;
+	height: 50px;
+	width: 100%;
+	/*position: fixed;*/
+	bottom: 0;
+	z-index: 1000;
+}
+
+#footer .footer_copy {
+	float:left; margin:27px auto 0 auto; margin-left:0%; width:93%; color:#fff; text-align:center; font-size:11px; font-family:Tahoma;
+}
+
+#footer .footer_copy a	{
+	color:#08c0fc;
+}
+
+#footer .footer_copy a:hover {
+	color:#00f6ff;
+}
+
+#footer .footer-icon {
+	background: url("../images/footer-icon.png") no-repeat scroll top left transparent;
+	height: 50px;
+	width: 59px;
+	float: right;
+}
+
+/* ==================================================
+ * 6) Sidebar
+ * ================================================== */
+
+/*
+ * 6.1) Login Details
+ */
+
+#login-details {
+	background: url("../images/login-details-bg.png") repeat-x scroll top center #073e81;
+	margin-right: 1px;
+	padding: 15px;
+}
+
+
+/*
+ * 6.2) Navigation
+ */
+
+#container > #sidebar {
+	float: left;
+	width: 19.4%;
+	position:relative;
+	z-index: 30;
+	padding-bottom:30px;
+	background:#96b7ce;
+	border-radius:0 0 30px 0;
+	box-shadow:1px 1px 0px #fff, 1px 1px 3px #aaa;
+}
+
+#container > #sidebar > #nav > .menu {
+	padding-bottom: 14px;
+	margin-top: -1px;
+}
+
+#container > #sidebar > #nav > .menu li {
+	overflow: hidden;
+	margin-right: 1px;
+	line-height: 39px;
+}
+
+#container > #sidebar > #nav > .menu li img {
+	padding-right: 15px;
+}
+
+#container > #sidebar > #nav > .menu li a {
+	background: url("../images/nav-item-bg.png") repeat-x scroll 0 0 transparent;
+	display: block;
+	text-decoration: none;
+	padding-left: 6%;
+}
+
+#container > #sidebar > #nav > .menu li a.current {
+	background: url("../images/nav-item-current-bg.png") repeat-x scroll top left transparent;
+}
+
+#container > #sidebar > #nav > .menu li ul li a.current {
+	background: none scroll top left #3777bf;
+}
+
+#container > #sidebar > #nav > .menu li a:hover {
+	background: url("../images/nav-item-bg.png") repeat-x scroll 0 -39px transparent;
+}
+
+#container > #sidebar > #nav > .menu li a span.arrow {
+	background: url("../images/nav-arrows.png") no-repeat 0 0 transparent;
+	position: absolute;
+	right: 0;
+	margin-top: 8px;
+	margin-right: 5px;
+	height: 24px;
+	width: 24px;
+}
+
+#container > #sidebar > #nav > .menu li .active-icon span.arrow {
+	background-position: 0px -24px;
+}
+
+#container > #sidebar > #nav > .menu li .non-active-icon span.arrow {
+	background-position: 0px 0px;
+}
+
+#container > #sidebar > #nav > .menu li ul {
+	background-color: #3168aa;
+}
+
+#container > #sidebar > #nav > .menu li ul li a {
+	background: none;
+	border-top: 1px solid #3981c5;
+	border-bottom:1px solid #335387;
+}
+
+#container > #sidebar > #nav > .menu li ul li a:hover {
+	background: none scroll top left #2960a3;
+}
+
+
+/*-----------------------------------------------------------------{ menu e-box }----------------------------------------------------------------------*/
+
+#container > #sidebar > #nav > .menu li a.ebox {
+	/*background:url(../img/icon/nav-item-bg_e_box.png) no-repeat top;*/
+	background:#d04627;
+	background:-moz-linear-gradient(top, #ed681b 0%, #b52733 100%);
+	background:-webkit-gradient(linear, 0 0%, 0 100%,from(#ed681b),to(#b52733));
+	border-top:1px solid #a8a8a8;
+	border-bottom:1px solid #891e20;
+	box-shadow:inset 0px 1px 0px #fff;
+	/*height:30px;*/
+	padding:5px 0 5px 20px;
+	display: block;
+	text-decoration: none;
+	font-size:20px;
+	color:#9fd511;
+	text-shadow:1px 1px 1px #333;
+}
+
+#container > #sidebar > #nav > .menu li a.ebox:hover {
+	/*background:url(../img/icon/nav-item-bg_e_box_hover.png) no-repeat top;*/
+	background:#69bc28;
+	background:-moz-linear-gradient(top, #75d025 0%, #549a2e 100%);
+	background:-webkit-gradient(linear, 0 0%, 0 100%,from(#75d025),to(#549a2e));
+	border-top:1px solid #5a983e;
+	border-bottom:1px solid #497f34;
+	box-shadow:inset 0px 1px 0px #afe58b;
+	color:#d3ff4c;
+}
+
+#container > #sidebar > #nav > .menu li a.ebox.current {
+	/*background:url(../img/icon/nav-item-bg_e_box.png) no-repeat top;
+	background: url("../img/icon/nav-item-current-bg_ebox.png") repeat-x scroll top left transparent;*/
+	background:#d04627;
+	background:-moz-linear-gradient(top, #ed681b 0%, #b52733 100%);
+	background:-webkit-gradient(linear, 0 0%, 0 100%,from(#ed681b),to(#b52733));
+}
+
+#container > #sidebar > #nav > .menu li a.ebox.current:hover {
+	/*background:url(../img/icon/nav-item-bg_e_box_hover.png) no-repeat top;*/
+	background:#69bc28;
+	background:-moz-linear-gradient(top, #75d025 0%, #549a2e 100%);
+	background:-webkit-gradient(linear, 0 0%, 0 100%,from(#75d025),to(#549a2e));
+}
+
+#container > #sidebar > #nav > .menu li ul.ebox {
+	background-color: #63b135;
+}
+
+#container > #sidebar > #nav > .menu li ul.ebox li a {
+	background: none;
+	border-top: 1px solid #94db1a;
+	border-bottom:1px solid #549b2a;
+	color:#fff;
+}
+
+#container > #sidebar > #nav > .menu li ul.ebox li a:hover {
+	background: none scroll top left #5dab33;
+	color:#ff0;
+}
+
+#container > #sidebar > #nav > .menu li ul.ebox li a.current {
+	background: none scroll top left #72c63b;
+}
+
+
+/*----------------------------------------{ accountDetails }----------------------------------*/
+.accountDetails {
+	width: 70%;
+	text-align: right;
+	font-size: 12px;
+	float: right;
+	position: absolute;
+	right: 0px;
+	padding-top: 15px;
+}
+.accountDetails span {
+	margin-left: 20px;
+}
+.accountDetails strong {
+	color: #72c63d;
+	margin-right: 10px;
+}
+
+
+/*
+ * 6.3) Badges
+ */
+
+.badge {
+	background: none repeat scroll top left #1c8ecf;
+	float: right;
+	margin-right: 33px;
+	margin-top: 10px;
+	line-height: 20px;
+	padding: 0 10px;
+	border-radius: 10px 10px 10px 10px;
+	font-size:12px;
+	text-shadow:none;
+}
+
+.badge.red {
+	background: none repeat scroll top left #864135;
+}
+
+.badge.grey {
+	background: none repeat scroll top left #d5d5d5;
+}
+
+
+
+
+
+
+/* ==================================================
+ * 7) Search-Bar & Title-Bar
+ * ================================================== */
+
+#container > #main > #title-bar {
+	background: url("../images/title-bar-bg.png") repeat-x scroll top left transparent;
+	height: 42px;
+	position: relative;
+	z-index: 30;
+}
+
+.shadow-titlebar {
+	height: 14px;
+}
+
+#container > #sidebar > #search-bar {
+	background: url("../images/title-bar-bg.png") repeat-x scroll top left transparent;
+	height: 42px;
+	position: relative;
+	z-index: 30;
+	margin-right: 1px;
+	margin-bottom: -1px;
+}
+
+
+
+
+
+/* ==================================================
+ * 8) Main
+ * ================================================== */
+
+
+#container > #main {
+	margin-left:19.4%;
+}
+
+#container > #main > #main-content {
+	background: url("../images/main-bg.png") repeat-x scroll top center transparent;
+	position: relative;
+	min-height: 434px;
+	margin-top: -14px;
+	padding-top: 10px;
+}
+
+
+
+/* ==================================================
+ * 9) Generic Shadow
+ * ================================================== */
+
+.shadow-top {
+	background: url("../images/shadow-top.png") repeat-x scroll top left transparent;
+	height: 14px;
+	position: relative;
+	z-index: 100;
+}
+
+.shadow-bottom {
+	background: url("../images/shadow-bottom.png") repeat-x scroll bottom left transparent;
+	position: relative;
+	z-index: 30;
+}
+
+
+
+
+
+/* ==================================================
+ * 10) Height Fixes
+ * ================================================== */
+
+.fix-shadow-bottom-height {
+	margin-top: -14px;
+}
+
+.height-fix {
+	height: 70px;
+}
+
+
+
+
+
+/* ==================================================
+ * 11) Divider
+ * ================================================== */
+
+.divider-header {
+	position: absolute;
+	margin-left:19.3%;
+}
+
+.divider-vertical {
+	background: url("../images/divider-vertical.png") no-repeat scroll top left transparent;
+	height: 34px;
+	width: 2px;
+	overflow: hidden;
+}
+
+.block-actions ul li.divider-vertical {
+	margin-top: -5px;
+	margin-right: -17px;
+}
+
+
+
+
+
+/* ==================================================
+ * 12) Image-Styles
+ * ================================================== */
+
+.framed {
+	background: none repeat scroll 0 0 #eeeff7;
+	border: 1px solid #969696;
+	line-height: 0;
+	padding: 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.img-left {
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+
+
+
+
+/* ==================================================
+ * 13) Blocks
+ * ================================================== */
+
+
+
+
+/* ==================================================
+ * 14) Tabs
+ * ================================================== */
+
+.block-header ul.tabs {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 13px;
+	position: absolute;
+	right: 5px;
+}
+
+.block-header ul.tabs li {
+	float: left;
+	padding: 5px 15px;
+	margin-right: 3px;
+	border-radius: 8px 8px 0px 0px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.block-header ul.tabs li.active {
+	background: none repeat scroll top left #fafafa;
+	border: 1px solid #9ba6ab;
+	border-bottom: 1px solid #fafafa;
+}
+
+.block-header ul.tabs li:hover {
+	background: none repeat scroll top left #fafafa;
+	border: 1px solid #9ba6ab;
+	border-bottom: 1px solid #fafafa;
+}
+
+
+
+/* ==================================================
+ * 15) Toolbox
+ * ================================================== */
+
+.toolbox-content {
+	background: url("../img/container/toolbox/toolbox-arrow.png") no-repeat scroll 51px 12px transparent;
+	position: absolute;
+	margin-left: -40px;
+	top: 30px;
+	z-index: 500;
+	display: block;
+	padding: 1em;
+	min-width: 20em;
+	line-height: 1em;
+	display: none;
+}
+
+
+
+
+
+
+
+/* ==================================================
+ * 16) Alert Boxes
+ * ================================================== */
+
+.alert {
+	border: 1px solid;
+	clear: both;
+	margin-bottom: 9px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 35px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+}
+
+.alert.no-margin {
+	border-radius: 0 0 0 0;
+	margin-left: -10px;
+	margin-right: -10px;
+	border-width: 1px 0;
+}
+
+.alert.no-margin.top {
+	border-width: 0 0 1px 0;
+	margin-top: 0;
+}
+
+.alert.no-margin.bottom {
+	border-width: 1px 0 0px 0;
+	margin-bottom: 0;
+}
+
+.alert span.hide {
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	float: right;
+	cursor: pointer;
+	margin: 0;
+}
+
+.alert.success { background-image: url("../images/tick-circle.png"); background-color: #d1e8d2; border-color: #339933; color: #00632E; line-height:150%; }
+.alert.successr { background-image: url("../images/tick-circle.png"); background-color: #d1e8d2; border-color: #339933; color: #00632E; line-height:150%; }
+.alert.error { background-image: url("../images/cross-circle.png"); background-color: #facfcf; border-color: #dc1c1c; color: #820101; line-height:150%; }
+.alert.errorr { background-image: url("../images/cross-circle.png"); background-color: #facfcf; border-color: #dc1c1c; color: #820101; line-height:150%; }
+.alert.warning { background-image: url("../images/exclamation.png"); background-color: #fdefbd; border-color: #d4b64b; color: #675100; line-height:150%; }
+.alert.warningr { background-image: url("../images/exclamation.png"); background-color: #fdefbd; border-color: #d4b64b; color: #675100; line-height:150%; }
+.alert.info { background-image: url("../images/information.png"); background-color: #d8e7fa; border-color: #9DBFEA; color: #00357B; line-height:150%; }
+.alert.infor { background-image: url("../images/information.png"); background-color: #d8e7fa; border-color: #9DBFEA; color: #00357B; line-height:150%; }
+.alert.note { background-image: url("../images/notebook.png"); background-color: #f4f4f4; border-color: #bdbdbd; color: #4d4d4d; line-height:150%; }
+.alert.noter { background-image: url("../images/notebook.png"); background-color: #f4f4f4; border-color: #bdbdbd; color: #4d4d4d; line-height:150%; }
+
+
+
+			.imgku4z {
+	margin: 0; 
+	padding: 2px; 
+	background: #fff; 
+	border: #C3C3C3 1px solid; 
+	line-height: 0; 
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+
+}
+
+
+/* ==================================================
+ * 17) Tooltips
+ * ================================================== */
+
+.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; }
+.tipsy-inner { padding: 5px 8px 4px 8px; background: url("../img/misc/tooltips/tooltip-bg.png") repeat-x scroll top left black; border: 1px solid black; color: white; max-width: 200px; text-align: center; }
+.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+.tipsy-arrow { position: absolute; background: url('../img/misc/tooltips/tooltip-arrow.gif') no-repeat top left; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+
+
+
+
+/* ==================================================
+ * 18) Misc
+ * ================================================== */
+
+/*
+ * 18.1) Noise
+ */
+
+.noise {
+	background: url("../img/misc/noise.png") repeat scroll top left transparent;
+	position: relative;
+	z-index: 9999999;
+}
+
+/*
+ * 18.2) Aligments
+ */
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+.align-left {
+	margin-left: 0;
+	margin-right: auto;
+	float: left !important;
+}
+
+.align-right {
+	margin-left: auto;
+	margin-right: 0;
+	float: right !important;
+}
+
+.align-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+button.calIcon{background: url(../jscal2/src/calendar7.gif) 1px 2px no-repeat; border:none; width:35px; height:35px;}
+
+div.alert-message {
+}
+.infox, .successx, .warningx, .errorx, .validationx {
+border: 3px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+font-family:Arial, Helvetica, sans-serif; 
+font-size:13px;
+-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.infox {
+color: #006297;
+background-color: #e3f7fc;
+background-image: url('../images/infox.png');
+border-color:#006297;
+}
+.successx {
+color: #3E6718;
+background-color: #DBFFC4;
+background-image:url('../images/oke.png');
+border-color:#3E6718;
+}
+.warningx {
+color: #915000;
+background-color: #fff8c4;
+background-image: url('../images/alrt.png');
+border-color:#915000;
+}
+.errorx {
+color: #B5301A;
+background-color: #ffecec;
+background-image: url('../images/err1.png');
+border-color:#B5301A;
+}
+
+.close {
+	color: #333;
+	float:right;
+	margin-top:px;
+	font-size: 17px;
+	opacity: 0.5;
+	padding: 10px;
+}
+.close:focus {
+	opacity: 0.8;
+}
+
+.alert-box {
+		color:#555;
+		border-radius:10px;
+		font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+		padding:10px 36px;
+		margin:10px;
+	}
+	.alert-box span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	.errors {
+		background:#ffecec url('../images/error.png') no-repeat 10px 50%;
+		border:1px solid #f5aca6;
+	}
+	.successs {
+		background:#e9ffd9 url('../images/success.png') no-repeat 10px 50%;
+		border:1px solid #a6ca8a;
+	}
+	.warnings {
+		background:#fff8c4 url('../images/warning.png') no-repeat 10px 50%;
+		border:1px solid #f2c779;
+	}
+	.notices {
+		background:#e3f7fc url('../images/notice.png') no-repeat 10px 50%;
+		border:1px solid #8ed9f6;
+	}

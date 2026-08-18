@@ -1,0 +1,91 @@
+
+	/**************************************************************/
+	/* First line 					  											  */
+	/**************************************************************/
+				
+	ul.vt-skin-blue li.vt-line-first div.vt-header
+	{
+		background:#FF962D;
+	}
+	
+	ul.vt-skin-blue li.vt-line-first div.vt-header-arrow
+	{
+		border-left-color:#FF962D;
+	}
+	
+	ul.vt-skin-blue li.vt-line-first:hover
+	{
+		outline-color:#FF962D;
+	}
+		
+	/*****************************************************************/
+	/* Second line 						  										  */
+	/*****************************************************************/
+		
+	ul.vt-skin-blue li.vt-line-second div.vt-header
+	{
+		background:#44A3D5;
+	}
+	
+	ul.vt-skin-blue li.vt-line-second div.vt-header-arrow
+	{
+		border-left-color:#44A3D5;
+	}		
+	
+	ul.vt-skin-blue li.vt-line-second:hover
+	{
+		outline-color:#44A3D5;
+	}
+		
+	/*****************************************************************/
+	/* Third line 						  										  	  */
+	/*****************************************************************/		
+		
+	ul.vt-skin-blue li.vt-line-third div.vt-header
+	{
+		background:#2972B0;
+	}
+	
+	ul.vt-skin-blue li.vt-line-third div.vt-header-arrow
+	{
+		border-left-color:#2972B0;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-third:hover
+	{
+		outline-color:#2972B0;
+	}
+		
+	/*****************************************************************/
+	/* Fourth line		 				  										  	  */
+	/*****************************************************************/				
+		
+	ul.vt-skin-blue li.vt-line-fourth div.vt-header
+	{
+		background:#234E8E;
+	}
+	
+	ul.vt-skin-blue li.vt-line-fourth div.vt-header-arrow
+	{
+		border-left-color:#234E8E;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-fourth:hover
+	{
+		outline-color:#234E8E;
+	}
+	
+	/*****************************************************************/
+	/* Line hover		 				  										  	  */
+	/*****************************************************************/	
+	
+	ul.vt-skin-blue li.vt-line:hover
+	{
+		background:#EDF6FB;	
+	}
+	
+	ul.vt-skin-blue li.vt-line:hover div.vt-content ul.vt-features li
+	{
+		background-image:url('../images/skin/blue/tick_active.png');
+	}
+	

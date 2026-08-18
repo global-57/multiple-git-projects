@@ -1,0 +1,45 @@
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, 
+.pad1, .pad2, .pad3, .pad4, .pad5, .pad6, .pad7, .pad8, .pad9, .pad10, .pad11, .pad12 {
+	margin-bottom: 24px; position: relative;
+	}
+.pad1, .pad2, .pad3, .pad4, .pad5, .pad6, .pad7, .pad8, .pad9, .pad10, .pad11, .pad12 {padding:3%;}
+.end {margin-bottom:0;}
+.last {margin:0;}
+
+@media all and (min-width: 800px) {	
+	/* 
+	# Columns ############################
+	*/
+	.col12 {width:960px;} .col11 {width:878px;} .col10 {width:796px;} .col9 {width:714px;} .col8 {width:632px;} .col7 {width:550px;}
+	.col6 {width:468px;} .col5 {width:386px;} .col4 {width:304px;} .col3 {width:222px;} .col2 {width:140px;} .col1 {width:58px;}
+	/* 
+	# Padded Columns ############################
+	*/
+	/* 20px */
+	.pad12 {width:920px;} .pad11 {width:838px;} .pad10 {width:756px;} .pad9 {width:674px;} .pad8 {width:592px;} .pad7 {width:510px;}
+	.pad6 {width:428px;} .pad5 {width:346px;} .pad4 {width:264px;} .pad3 {width:182px;} .pad2 {width:100px;} .pad1 {width:18px;}
+	.pad12, .pad11, .pad10, .pad9, .pad8, .pad7, .pad6, .pad5, .pad4, .pad3, .pad2, .pad1  {padding:20px 20px;}	
+	/* 
+	# Positioning and Spacing ############################
+	*/
+	/* Float all columns smaller then 960px */
+	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11,
+	.pad1, .pad2, .pad3, .pad4, .pad5, .pad6, .pad7, .pad8, .pad9, .pad10, .pad11 {
+		float: left; display: inline; margin-right: 24px;
+		}
+	/* Add .last to final Column in a row to erase right margin */
+	.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last,
+	.pad1.last, .pad2.last, .pad3.last, .pad4.last, .pad5.last, .pad6.last, .pad7.last, .pad8.last, .pad9.last, .pad10.last, .pad11.last {
+		margin-right:0; float: right;
+		}
+	/* Add .top to Columns to add a top margin */
+	.col1.top, .col2.top, .col3.top, .col4.top, .col5.top, .col6.top, .col7.top, .col8.top, .col9.top, .col10.top, .col11.top, .col12.top,
+	.pad1.top, .pad2.top, .pad3.top, .pad4.top, .pad5.top, .pad6.top, .pad7.top, .pad8.top, .pad9.top, .pad10.top, .pad11.top, .pad12.top {
+		margin-top: 24px; position: relative;
+		}		
+	/* Add .end to Columns to erase bottom margin */
+	.col1.end, .col2.end, .col3.end, .col4.end, .col5.end, .col6.end, .col7.end, .col8.end, .col9.end, .col10.end, .col11.end, .col12.end,
+	.pad1.end, .pad2.end, .pad3.end, .pad4.end, .pad5.end, .pad6.end, .pad7.end, .pad8.end, .pad9.end, .pad10.end, .pad11.end, .pad12.end {
+		margin-bottom:0;
+		}
+}

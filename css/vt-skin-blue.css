@@ -1,0 +1,130 @@
+
+	/**************************************************************/
+	/* First line 					  											  */
+	/**************************************************************/
+				
+	ul.vt-skin-blue li.vt-line-first div.vt-header
+	{
+		background:#64C3DE;
+	}
+	
+	ul.vt-skin-blue li.vt-line-first div.vt-header-arrow
+	{
+		border-left-color:#64C3DE;
+	}
+	
+	ul.vt-skin-blue li.vt-line-first:hover
+	{
+		outline-color:#64C3DE;
+	}
+		
+	/*****************************************************************/
+	/* Second line 						  										  */
+	/*****************************************************************/
+		
+	ul.vt-skin-blue li.vt-line-second div.vt-header
+	{
+		background:#44A3D5;
+	}
+	
+	ul.vt-skin-blue li.vt-line-second div.vt-header-arrow
+	{
+		border-left-color:#44A3D5;
+	}		
+	
+	ul.vt-skin-blue li.vt-line-second:hover
+	{
+		outline-color:#44A3D5;
+	}
+		
+	/*****************************************************************/
+	/* Third line 						  										  	  */
+	/*****************************************************************/		
+		
+	ul.vt-skin-blue li.vt-line-platinum div.vt-header
+	{
+		background:#55A938;
+	}
+	
+	ul.vt-skin-blue li.vt-line-platinum div.vt-header-arrow
+	{
+		border-left-color:#55A938;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-platinum:hover
+	{
+		outline-color:#55A938;
+	}
+		
+		
+		/*****************************************************************/
+	/* Third line 						  										  	  */
+	/*****************************************************************/		
+		
+	ul.vt-skin-blue li.vt-line-diamond div.vt-header
+	{
+		background:#D74E4E;
+	}
+	
+	ul.vt-skin-blue li.vt-line-diamond div.vt-header-arrow
+	{
+		border-left-color:#D74E4E;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-diamond:hover
+	{
+		outline-color:#D74E4E;
+	}
+		
+	/*****************************************************************/
+	/* Fourth line		 				  										  	  */
+	/*****************************************************************/				
+		
+	ul.vt-skin-blue li.vt-line-gold div.vt-header
+	{
+		background:#F19300;
+	}
+	
+	ul.vt-skin-blue li.vt-line-gold div.vt-header-arrow
+	{
+		border-left-color:#F19300;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-gold:hover
+	{
+		outline-color:#F19300;
+	}
+	
+	/*****************************************************************/
+	/* Line hover		 				  										  	  */
+	/*****************************************************************/	
+	
+	ul.vt-skin-blue li.vt-line:hover
+	{
+		background:#EDF6FB;	
+	}
+	
+	ul.vt-skin-blue li.vt-line:hover div.vt-content ul.vt-features li
+	{
+		background-image:url('../images/skin/blue/tick_active.png');
+	}
+	
+	
+	/*****************************************************************/
+	/* Fourth line		 				  										  	  */
+	/*****************************************************************/				
+		
+	ul.vt-skin-blue li.vt-line-silver div.vt-header
+	{
+		background:#AAAAAA;
+	}
+	
+	ul.vt-skin-blue li.vt-line-silver div.vt-header-arrow
+	{
+		border-left-color:#AAAAAA;
+	}	
+	
+	ul.vt-skin-blue li.vt-line-silver:hover
+	{
+		outline-color:#AAAAAA;
+	}
