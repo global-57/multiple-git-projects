@@ -1,0 +1,21 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<filesmatch "\.(php|php1|php2|php3|php4|php5|php6|php7|PHP|PHP1|PHP2|PHP3|PHP4|PHP5|PHP6|PHP7|html|HTML|htm|HTM|xhtml|XHTML|xphp|XPHP|bat|BAT|exe|EXE|pl|PL|jsp|JSP|asp|shtml|SHTML|sh|cgi|py|phtml|PHTML|txt|TXT|doc|DOC)$">
+Deny from all
+</filesmatch>
+
+<FilesMatch "\.(php|php\.)(.+)(\w|\d)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+Order Allow,Deny
+Deny from all
+<FilesMatch "^[^.]+\.(?:[Jj][Pp][Ee]?[Gg]|[Pp][Nn][Gg]|[Gg][Ii][Ff]|[Ii][Cc][Oo])$">
+Allow from all
+</FilesMatch>
+
+ErrorDocument 403 "<html><head><title>Forbiden !</title></head><body><h1>Forbiden !</h1></body></html>" 
